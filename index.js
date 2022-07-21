@@ -2,8 +2,18 @@ const fs = require("fs");
 const webp = require('webp-converter');
 
 const dropzone = document.getElementById("dropzone");
+const fileInput = document.getElementById("upload-file");
 const list = document.getElementById("list");
 const noListText = document.getElementById("no-list-text");
+
+fileInput.addEventListener("change", (e) => {
+  const files = Array.from(e.target.files);
+
+  if (files.length > 0) {
+    creteList(files);
+    convertList(files);
+  }
+});
 
 dropzone.addEventListener("dragover", (e) => {
   e.stopPropagation();
