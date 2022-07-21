@@ -1,0 +1,16 @@
+{
+  "name": "webp-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^19.0.8",
+    "fs": "0.0.1-security",
+    "webp-converter": "^2.3.3"
+  }
+}
