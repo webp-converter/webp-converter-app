@@ -7,7 +7,7 @@
   "scripts": {
     "start": "electron ."
   },
-  "author": "",
+  "author": "Yasin B. Kalkan",
   "license": "ISC",
   "dependencies": {
     "fs": "0.0.1-security",
